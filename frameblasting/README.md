@@ -15,5 +15,10 @@ between two ByteBlower interfaces.
 
 ### Scenario: Ex1. frameblasting
 The default FrameBlasting flow. Fairly large UDP packets (1024 bytes) being sent from PORT_1 to PORT_2.
+
 ### Scenario: Ex2. udp_port_change
+This scenario also send UDP packets. As an example the UDP port has been changed to port 9000
+
 ### Scenario: Ex3. frameblasting_IPv6
+This example is very similar to the first case, only it uses IPv6. In the Frame
+view, you'll note that the Layer3 has been configured to IPV6.
