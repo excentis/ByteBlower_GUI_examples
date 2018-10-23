@@ -34,7 +34,18 @@ view, you'll note that the Layer3 has been configured to IPV6.
 In this project we deviate from the standard usecase: instead of nice UDP
 traffic we'll challenge the network with purposely wrong traffic.
 
+The project assumes that the ByteBlower ports are docked behind a NAT-device
+(or any type of modem or access point). We make this assumption mostly because
+such devices are the most senstive to the generated traffic.
+
+A default, UDP frameblasting flow checks whether we are successful in disrupting the
+device under test.
+
 ### Ex 1. Syn blasting
+This scenario floods the netwerk with TCP-syn packets.
+
 ### Ex 2. Wrong checksums
+
 ### Ex 3. Wrong Ether types
+
 ### Ex 4. Broadcast traffic
