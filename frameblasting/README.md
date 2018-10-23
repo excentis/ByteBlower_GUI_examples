@@ -42,10 +42,14 @@ A default, UDP frameblasting flow checks whether we are successful in disrupting
 device under test.
 
 ### Ex 1. Syn blasting
-This scenario floods the netwerk with TCP-syn packets.
+This scenario floods the netwerk with TCP-syn packets. The NAT-device should ignore them fairly quickly.
 
 ### Ex 2. Wrong checksums
+Small packets with purposely wrong IPv4 header checksum and IPv4 length.
 
 ### Ex 3. Wrong Ether types
+Sends out traffic with an uncommon Ether type (0x500)
 
 ### Ex 4. Broadcast traffic
+An example how to broadcast UDP traffic. This the most benign of all the
+scenarios. The rate is also fairly low (<1 MBit/s).
