@@ -11,7 +11,14 @@ basic use case is loading the network with UDP traffic.
 
 ## frameblasting_basic.bbp
 This project has a couple basic FrameBlasting examples. It sends traffic
-between two ByteBlower interfaces.
+between two ByteBlower interfaces. 
+
+It shows the basic use-case of (slightly) loading the network with UDP 
+traffic. 
+
+A good first step after this example is to increase the speed of the flows
+drastically. Since 2.9.0, most models should easily be able to sent these
+frames at line-rate.
 
 ### Scenario: Ex1. frameblasting
 The default FrameBlasting flow. Fairly large UDP packets (1024 bytes) being sent from PORT_1 to PORT_2.
@@ -24,3 +31,5 @@ This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
 ## frameblasting_odd_packets.bbp
+
+### 
