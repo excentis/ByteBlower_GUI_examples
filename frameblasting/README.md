@@ -31,5 +31,10 @@ This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
 ## frameblasting_odd_packets.bbp
+In this project we deviate from the standard usecase: instead of nice UDP
+traffic we'll challenge the network with purposely wrong traffic.
 
-### 
+### Ex 1. Syn blasting
+### Ex 2. Wrong checksums
+### Ex 3. Wrong Ether types
+### Ex 4. Broadcast traffic
