@@ -84,4 +84,5 @@ A simple scenario to check the timeout of the NAT entry. The setup is the same
 as the first scenario, but the duration is much longer.
 
 ### Scenario: Ex4. Blocked traffic
-Unlike the previous scenarios, this is a negative test: we don't expect any traffic to through here.
+Unlike the previous scenarios, this is a negative test: we don't expect any
+traffic to through here.
