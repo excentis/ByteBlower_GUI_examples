@@ -66,9 +66,22 @@ enabled the NAT flag on two of them.
 
 
 ### Scenario: Ex1. Basic Nat
+The default config to test a device behind a NAT. In this case we'll send traffic
+downstream: from the WAN to inside the LAN. 
+
+In practice, many devices will uses the same UDP port number for the private
+(inside the NAT) and the public (WAN-side).
 
 ### Scenario: Ex2. Force remap
+A slightly more complex scenario. We send traffic to two different ByteBlower
+Ports inside the LAN. To the outside world (the WAN) both ByteBower ports have
+the same public IP address.
+
+Unlike the first scenario, the NAT can't do an identity mapping for both.
 
 ### Scenario: Ex3. NAT timeout check
+A simple scenario to check the timeout of the NAT entry. The setup is the same
+as the first scenario, but the duration is much longer.
 
 ### Scenario: Ex4. Blocked traffic
+Unlike the previous scenarios, this is a negative test: we don't expect any traffic to through here.
