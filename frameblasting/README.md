@@ -57,5 +57,12 @@ scenarios. The rate is also fairly low (<1 MBit/s).
 
 ## NAT.bbp
 
-This project has a basic LAN test. It has single ByteBlower Port docked in the
-WAN and 3 behind NAT device.
+This project shows a couple tests of a NAT device. 
+
+The project uses 4 ByteBlower ports: one is docked in the WAN, the other 3 are
+behind the NAT device. The Port on the WAN side is publicly acessible.
+You'll notice that even though all ByteBlower ports are behind the NAT, we've only
+enabled the NAT flag on two of them.
+
+
+
