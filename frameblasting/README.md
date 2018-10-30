@@ -65,4 +65,10 @@ You'll notice that even though all ByteBlower ports are behind the NAT, we've on
 enabled the NAT flag on two of them.
 
 
+### Scenario: Ex1. Basic Nat
 
+### Scenario: Ex2. Force remap
+
+### Scenario: Ex3. NAT timeout check
+
+### Scenario: Ex4. Blocked traffic
