@@ -53,3 +53,9 @@ Sends out traffic with an uncommon Ether type (0x500)
 ### Ex 4. Broadcast traffic
 An example how to broadcast UDP traffic. This the most benign of all the
 scenarios. The rate is also fairly low (<1 MBit/s).
+
+
+## NAT.bbp
+
+This project has a basic LAN test. It has single ByteBlower Port docked in the
+WAN and 3 behind NAT device.
