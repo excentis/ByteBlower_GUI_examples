@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ASCII"?>
+<byteblowerguimodel_v1_3:ByteBlowerProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:byteblowerguimodel_v1_3="http:///com.excentis.products.byteblower.gui.model.ecore" name="Traffic profiles" author="pieter.v" modelVersion="2.9.4" defaultBatchInitializationTime="10000000000" warningLossLevel="0.01" errorLossLevel="0.02" reportOutputToHtml="true" reportOutputToExcel="false" reportOutputToCsv="true" reportProjectBackup="true" throughputUnit="kbps" scenarioIdenticalFramesWarning="true" scenarioPauseAfterDhcp="true" scenarioEnableScoutingFrames="true" scenarioIgnoreInitializationErrors="false" scenarioWaitTimeAfterScenario="5000000000" throughputType="FrameOnly" dhcpTimeout="1000000000" numberOfDecimals="2" dhcpRetries="5" latencyRangeStart="0" latencyRangeEnd="100000000" latencyUnit="17" numberOfLatencyDecimals="3" reportOutputToPdf="false" ScenarioHttpAllowAlive="9223372036854775807" scenarioAutomaticTcpRestart="true">
+  <Scenario name="Ex 1. File download">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="Ex 2. Files upload">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.1">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.2">
+      <flowStartEvent scheduledTime="2000000000"/>
+      <flowStopEvent scheduledTime="12000000000"/>
+    </measurements>
+  </Scenario>
+  <Flow name="File download" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
+  <Flow name="image upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
+  <Flow name="large file upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.1" tos="0"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="TCP_1" Flow="//@Flow.0" payloadSize="Unlimited" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="Bytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="image_request" Flow="//@Flow.1" payloadSize="100" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="KBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="large_file_request" Flow="//@Flow.2" payloadSize="1" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="GBytes" slowStart="65535"/>
+  <ByteBlowerGuiPort name="WAN" theSourceOfFlow="//@Flow.0" theDestinationOfFlow="//@Flow.1 //@Flow.2" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>-104</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="1" physicalPortId="-1" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="MODEM" theSourceOfFlow="//@Flow.1 //@Flow.2" theDestinationOfFlow="//@Flow.0" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>-104</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="0" physicalPortId="44" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <Dhcp name="DHCP_1" MaximumDiscoverRetries="5" InitialDiscoverTimeout="1000000000" MaximumRequestRetries="5" InitialRequestTimeout="1000000000" RetransmissionPolicy="FixedTiming" ipv4Configurations="//@ByteBlowerGuiPort.0/@ipv4Configuration //@ByteBlowerGuiPort.1/@ipv4Configuration"/>
+</byteblowerguimodel_v1_3:ByteBlowerProject>
