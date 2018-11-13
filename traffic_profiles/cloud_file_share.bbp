@@ -16,12 +16,12 @@
       <flowStopEvent scheduledTime="12000000000"/>
     </measurements>
   </Scenario>
-  <Flow name="File download" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
-  <Flow name="image upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
-  <Flow name="large file upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.1" tos="0"/>
-  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="TCP_1" Flow="//@Flow.0" payloadSize="Unlimited" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="Bytes" slowStart="65535"/>
+  <Flow name="Linux installer download" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
+  <Flow name="Image upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
+  <Flow name="Backup upload" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.1" tos="0"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="backup" Flow="//@Flow.2" payloadSize="100" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
   <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="image_request" Flow="//@Flow.1" payloadSize="100" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="KBytes" slowStart="65535"/>
-  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="large_file_request" Flow="//@Flow.2" payloadSize="1" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="GBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="ubuntu_installer" Flow="//@Flow.0" payloadSize="1.9" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="GET" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="100.0" rateLimitUnit="Mbps" payloadUnit="GBytes" slowStart="65535"/>
   <ByteBlowerGuiPort name="WAN" theSourceOfFlow="//@Flow.0" theDestinationOfFlow="//@Flow.1 //@Flow.2" natted="false" mtu="1500">
     <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
       <MacAddress>
