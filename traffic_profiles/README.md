@@ -3,7 +3,7 @@
 This folder contains various traffic profiles implemented in the ByteBlower 
 GUI.
 
-## Traffic profile: browsing
+## Traffic profile: Browsing
 This traffic profile emulates web-browsing. You can implement this very 
 easy with the payload based TCP profiles.
 
@@ -11,8 +11,15 @@ easy with the payload based TCP profiles.
 This scenario visits a website. During this visits several files are
 download from a 9 different web servers.
 
+## Traffic profile: Gaming
+Emulates a gaming session taking place. Durign this session there's
+a small upstream load with updates from the game client. The gaming
+server sends a regular update downstream.
 
-## Traffic profile: cloud file share
+The upstream load is much smaller than the downstream one.
+
+
+## Traffic profile: Cloud file share
 This project demonstrates how to emulate web traffic. It shows a small
 requests for e.g.
 
