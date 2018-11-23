@@ -32,3 +32,9 @@ Uploads files to a webserver. It shows uploading a small image file and we
 show a backup being synchronized with a remote server.
 
 
+## Traffic profile: Video streaming
+In this exmaple you'll find a couple examples on how to emulate a video stream.
+It includes 3 quality settings (default, High-Definition and Ultra High Definition).
+
+Of the last UHD profile, the project shows two ways to implement it.
+

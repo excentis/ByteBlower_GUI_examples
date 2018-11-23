@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="ASCII"?>
+<byteblowerguimodel_v1_3:ByteBlowerProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:byteblowerguimodel_v1_3="http:///com.excentis.products.byteblower.gui.model.ecore" name="Traffic_Profile_Browsing" author="pieter.v" modelVersion="2.9.99" defaultBatchInitializationTime="10000000000" warningLossLevel="0.01" errorLossLevel="0.02" reportOutputToHtml="true" reportOutputToExcel="false" reportOutputToCsv="true" reportProjectBackup="true" throughputUnit="kbps" scenarioIdenticalFramesWarning="true" scenarioPauseAfterDhcp="true" scenarioEnableScoutingFrames="true" scenarioIgnoreInitializationErrors="false" scenarioWaitTimeAfterScenario="5000000000" throughputType="FrameOnly" dhcpTimeout="1000000000" numberOfDecimals="2" dhcpRetries="5" latencyRangeStart="0" latencyRangeEnd="100000000" latencyUnit="17" numberOfLatencyDecimals="3" reportOutputToPdf="false" ScenarioHttpAllowAlive="9223372036854775807" scenarioAutomaticTcpRestart="true">
+  <Scenario name="default_video">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.3">
+      <flowStartEvent scheduledTime="10000000000"/>
+      <flowStopEvent scheduledTime="20000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.4">
+      <flowStartEvent scheduledTime="15000000000"/>
+      <flowStopEvent scheduledTime="25000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.5">
+      <flowStartEvent scheduledTime="20000000000"/>
+      <flowStopEvent scheduledTime="30000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.6">
+      <flowStartEvent scheduledTime="25000000000"/>
+      <flowStopEvent scheduledTime="35000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.7">
+      <flowStartEvent scheduledTime="30000000000"/>
+      <flowStopEvent scheduledTime="40000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.8">
+      <flowStartEvent scheduledTime="35000000000"/>
+      <flowStopEvent scheduledTime="45000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.9">
+      <flowStartEvent scheduledTime="40000000000"/>
+      <flowStopEvent scheduledTime="50000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.10">
+      <flowStartEvent scheduledTime="45000000000"/>
+      <flowStopEvent scheduledTime="55000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.11">
+      <flowStartEvent scheduledTime="50000000000"/>
+      <flowStopEvent scheduledTime="60000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.12">
+      <flowStartEvent scheduledTime="55000000000"/>
+      <flowStopEvent scheduledTime="65000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.13">
+      <flowStartEvent scheduledTime="60000000000"/>
+      <flowStopEvent scheduledTime="70000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.14">
+      <flowStartEvent scheduledTime="65000000000"/>
+      <flowStopEvent scheduledTime="75000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.15">
+      <flowStartEvent scheduledTime="70000000000"/>
+      <flowStopEvent scheduledTime="80000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.16">
+      <flowStartEvent scheduledTime="75000000000"/>
+      <flowStopEvent scheduledTime="85000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.17">
+      <flowStartEvent scheduledTime="80000000000"/>
+      <flowStopEvent scheduledTime="90000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.18">
+      <flowStartEvent scheduledTime="85000000000"/>
+      <flowStopEvent scheduledTime="95000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.19">
+      <flowStartEvent scheduledTime="90000000000"/>
+      <flowStopEvent scheduledTime="100000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.20">
+      <flowStartEvent scheduledTime="95000000000"/>
+      <flowStopEvent scheduledTime="105000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.21">
+      <flowStartEvent scheduledTime="100000000000"/>
+      <flowStopEvent scheduledTime="110000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.22">
+      <flowStartEvent scheduledTime="105000000000"/>
+      <flowStopEvent scheduledTime="115000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.23">
+      <flowStartEvent scheduledTime="110000000000"/>
+      <flowStopEvent scheduledTime="120000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.24">
+      <flowStartEvent scheduledTime="115000000000"/>
+      <flowStopEvent scheduledTime="125000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="HD_video">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.1">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.25">
+      <flowStartEvent scheduledTime="10000000000"/>
+      <flowStopEvent scheduledTime="20000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.26">
+      <flowStartEvent scheduledTime="15000000000"/>
+      <flowStopEvent scheduledTime="25000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.27">
+      <flowStartEvent scheduledTime="20000000000"/>
+      <flowStopEvent scheduledTime="30000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.28">
+      <flowStartEvent scheduledTime="25000000000"/>
+      <flowStopEvent scheduledTime="35000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.29">
+      <flowStartEvent scheduledTime="30000000000"/>
+      <flowStopEvent scheduledTime="40000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.30">
+      <flowStartEvent scheduledTime="35000000000"/>
+      <flowStopEvent scheduledTime="45000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.31">
+      <flowStartEvent scheduledTime="40000000000"/>
+      <flowStopEvent scheduledTime="50000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.32">
+      <flowStartEvent scheduledTime="45000000000"/>
+      <flowStopEvent scheduledTime="55000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.33">
+      <flowStartEvent scheduledTime="50000000000"/>
+      <flowStopEvent scheduledTime="60000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.34">
+      <flowStartEvent scheduledTime="55000000000"/>
+      <flowStopEvent scheduledTime="65000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.35">
+      <flowStartEvent scheduledTime="60000000000"/>
+      <flowStopEvent scheduledTime="70000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.36">
+      <flowStartEvent scheduledTime="65000000000"/>
+      <flowStopEvent scheduledTime="75000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.37">
+      <flowStartEvent scheduledTime="70000000000"/>
+      <flowStopEvent scheduledTime="80000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.38">
+      <flowStartEvent scheduledTime="75000000000"/>
+      <flowStopEvent scheduledTime="85000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.39">
+      <flowStartEvent scheduledTime="80000000000"/>
+      <flowStopEvent scheduledTime="90000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.40">
+      <flowStartEvent scheduledTime="85000000000"/>
+      <flowStopEvent scheduledTime="95000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.41">
+      <flowStartEvent scheduledTime="90000000000"/>
+      <flowStopEvent scheduledTime="100000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.42">
+      <flowStartEvent scheduledTime="95000000000"/>
+      <flowStopEvent scheduledTime="105000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.43">
+      <flowStartEvent scheduledTime="100000000000"/>
+      <flowStopEvent scheduledTime="110000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.44">
+      <flowStartEvent scheduledTime="105000000000"/>
+      <flowStopEvent scheduledTime="115000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.45">
+      <flowStartEvent scheduledTime="110000000000"/>
+      <flowStopEvent scheduledTime="120000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.46">
+      <flowStartEvent scheduledTime="115000000000"/>
+      <flowStopEvent scheduledTime="125000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="UHD_video">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.2">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.47">
+      <flowStartEvent scheduledTime="10000000000"/>
+      <flowStopEvent scheduledTime="20000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.48">
+      <flowStartEvent scheduledTime="15000000000"/>
+      <flowStopEvent scheduledTime="25000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.49">
+      <flowStartEvent scheduledTime="20000000000"/>
+      <flowStopEvent scheduledTime="30000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.50">
+      <flowStartEvent scheduledTime="25000000000"/>
+      <flowStopEvent scheduledTime="35000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.51">
+      <flowStartEvent scheduledTime="30000000000"/>
+      <flowStopEvent scheduledTime="40000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.52">
+      <flowStartEvent scheduledTime="35000000000"/>
+      <flowStopEvent scheduledTime="45000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.53">
+      <flowStartEvent scheduledTime="40000000000"/>
+      <flowStopEvent scheduledTime="50000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.54">
+      <flowStartEvent scheduledTime="45000000000"/>
+      <flowStopEvent scheduledTime="55000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.55">
+      <flowStartEvent scheduledTime="50000000000"/>
+      <flowStopEvent scheduledTime="60000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.56">
+      <flowStartEvent scheduledTime="55000000000"/>
+      <flowStopEvent scheduledTime="65000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.57">
+      <flowStartEvent scheduledTime="60000000000"/>
+      <flowStopEvent scheduledTime="70000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.58">
+      <flowStartEvent scheduledTime="65000000000"/>
+      <flowStopEvent scheduledTime="75000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.59">
+      <flowStartEvent scheduledTime="70000000000"/>
+      <flowStopEvent scheduledTime="80000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.60">
+      <flowStartEvent scheduledTime="75000000000"/>
+      <flowStopEvent scheduledTime="85000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.61">
+      <flowStartEvent scheduledTime="80000000000"/>
+      <flowStopEvent scheduledTime="90000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.62">
+      <flowStartEvent scheduledTime="85000000000"/>
+      <flowStopEvent scheduledTime="95000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.63">
+      <flowStartEvent scheduledTime="90000000000"/>
+      <flowStopEvent scheduledTime="100000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.64">
+      <flowStartEvent scheduledTime="95000000000"/>
+      <flowStopEvent scheduledTime="105000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.65">
+      <flowStartEvent scheduledTime="100000000000"/>
+      <flowStopEvent scheduledTime="110000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.66">
+      <flowStartEvent scheduledTime="105000000000"/>
+      <flowStopEvent scheduledTime="115000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.67">
+      <flowStartEvent scheduledTime="110000000000"/>
+      <flowStopEvent scheduledTime="120000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.68">
+      <flowStartEvent scheduledTime="115000000000"/>
+      <flowStopEvent scheduledTime="125000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="UHD_other_approach">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="2000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="10000000000"/>
+      <flowStopEvent scheduledTime="11000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="15000000000"/>
+      <flowStopEvent scheduledTime="16000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="20000000000"/>
+      <flowStopEvent scheduledTime="21000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="25000000000"/>
+      <flowStopEvent scheduledTime="26000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="30000000000"/>
+      <flowStopEvent scheduledTime="31000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="35000000000"/>
+      <flowStopEvent scheduledTime="36000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="40000000000"/>
+      <flowStopEvent scheduledTime="41000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="45000000000"/>
+      <flowStopEvent scheduledTime="46000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="50000000000"/>
+      <flowStopEvent scheduledTime="51000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="55000000000"/>
+      <flowStopEvent scheduledTime="56000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="60000000000"/>
+      <flowStopEvent scheduledTime="61000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="65000000000"/>
+      <flowStopEvent scheduledTime="66000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="70000000000"/>
+      <flowStopEvent scheduledTime="71000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="75000000000"/>
+      <flowStopEvent scheduledTime="76000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="80000000000"/>
+      <flowStopEvent scheduledTime="81000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="85000000000"/>
+      <flowStopEvent scheduledTime="86000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="90000000000"/>
+      <flowStopEvent scheduledTime="91000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="95000000000"/>
+      <flowStopEvent scheduledTime="96000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="100000000000"/>
+      <flowStopEvent scheduledTime="101000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="105000000000"/>
+      <flowStopEvent scheduledTime="106000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="110000000000"/>
+      <flowStopEvent scheduledTime="111000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="115000000000"/>
+      <flowStopEvent scheduledTime="116000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="120000000000"/>
+      <flowStopEvent scheduledTime="121000000000"/>
+    </measurements>
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.69">
+      <flowStartEvent scheduledTime="125000000000"/>
+      <flowStopEvent scheduledTime="126000000000"/>
+    </measurements>
+  </Scenario>
+  <Flow name="start_video_default" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
+  <Flow name="start_video_HD" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.3" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
+  <Flow name="start_video_UHD" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.5" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.0" tos="0"/>
+  <Flow name="run_video_default_1" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.1" tos="0"/>
+  <Flow name="run_video_default_2" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.2" tos="0"/>
+  <Flow name="run_video_default_3" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.3" tos="0"/>
+  <Flow name="run_video_default_4" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.4" tos="0"/>
+  <Flow name="run_video_default_5" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.5" tos="0"/>
+  <Flow name="run_video_default_6" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.6" tos="0"/>
+  <Flow name="run_video_default_7" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.7" tos="0"/>
+  <Flow name="run_video_default_8" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.8" tos="0"/>
+  <Flow name="run_video_default_9" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.9" tos="0"/>
+  <Flow name="run_video_default_10" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.10" tos="0"/>
+  <Flow name="run_video_default_11" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.11" tos="0"/>
+  <Flow name="run_video_default_12" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.12" tos="0"/>
+  <Flow name="run_video_default_13" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.13" tos="0"/>
+  <Flow name="run_video_default_14" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.14" tos="0"/>
+  <Flow name="run_video_default_15" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.15" tos="0"/>
+  <Flow name="run_video_default_16" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.16" tos="0"/>
+  <Flow name="run_video_default_17" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.17" tos="0"/>
+  <Flow name="run_video_default_18" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.18" tos="0"/>
+  <Flow name="run_video_default_19" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.19" tos="0"/>
+  <Flow name="run_video_default_20" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.20" tos="0"/>
+  <Flow name="run_video_default_21" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.21" tos="0"/>
+  <Flow name="run_video_default_22" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.22" tos="0"/>
+  <Flow name="run_video_HD_1" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.1" tos="0"/>
+  <Flow name="run_video_HD_2" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.2" tos="0"/>
+  <Flow name="run_video_HD_3" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.3" tos="0"/>
+  <Flow name="run_video_HD_4" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.4" tos="0"/>
+  <Flow name="run_video_HD_5" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.5" tos="0"/>
+  <Flow name="run_video_HD_6" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.6" tos="0"/>
+  <Flow name="run_video_HD_7" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.7" tos="0"/>
+  <Flow name="run_video_HD_8" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.8" tos="0"/>
+  <Flow name="run_video_HD_9" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.9" tos="0"/>
+  <Flow name="run_video_HD_10" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.10" tos="0"/>
+  <Flow name="run_video_HD_11" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.11" tos="0"/>
+  <Flow name="run_video_HD_12" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.12" tos="0"/>
+  <Flow name="run_video_HD_13" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.13" tos="0"/>
+  <Flow name="run_video_HD_14" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.14" tos="0"/>
+  <Flow name="run_video_HD_15" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.15" tos="0"/>
+  <Flow name="run_video_HD_16" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.16" tos="0"/>
+  <Flow name="run_video_HD_17" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.17" tos="0"/>
+  <Flow name="run_video_HD_18" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.18" tos="0"/>
+  <Flow name="run_video_HD_19" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.19" tos="0"/>
+  <Flow name="run_video_HD_20" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.20" tos="0"/>
+  <Flow name="run_video_HD_21" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.21" tos="0"/>
+  <Flow name="run_video_HD_22" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.22" tos="0"/>
+  <Flow name="run_video_UHD_1" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.1" tos="0"/>
+  <Flow name="run_video_UHD_2" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.2" tos="0"/>
+  <Flow name="run_video_UHD_3" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.3" tos="0"/>
+  <Flow name="run_video_UHD_4" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.4" tos="0"/>
+  <Flow name="run_video_UHD_5" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.5" tos="0"/>
+  <Flow name="run_video_UHD_6" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.6" tos="0"/>
+  <Flow name="run_video_UHD_7" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.7" tos="0"/>
+  <Flow name="run_video_UHD_8" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.8" tos="0"/>
+  <Flow name="run_video_UHD_9" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.9" tos="0"/>
+  <Flow name="run_video_UHD_10" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.10" tos="0"/>
+  <Flow name="run_video_UHD_11" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.11" tos="0"/>
+  <Flow name="run_video_UHD_12" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.12" tos="0"/>
+  <Flow name="run_video_UHD_13" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.13" tos="0"/>
+  <Flow name="run_video_UHD_14" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.14" tos="0"/>
+  <Flow name="run_video_UHD_15" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.15" tos="0"/>
+  <Flow name="run_video_UHD_16" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.16" tos="0"/>
+  <Flow name="run_video_UHD_17" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.17" tos="0"/>
+  <Flow name="run_video_UHD_18" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.18" tos="0"/>
+  <Flow name="run_video_UHD_19" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.19" tos="0"/>
+  <Flow name="run_video_UHD_20" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.20" tos="0"/>
+  <Flow name="run_video_UHD_21" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.21" tos="0"/>
+  <Flow name="run_video_UHD_22" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.4" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.22" tos="0"/>
+  <Flow name="uhd" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.6" latencyAndJitterType="No" flowMeasurement="//@Scenario.3/@measurements.0 //@Scenario.3/@measurements.24 //@Scenario.3/@measurements.1 //@Scenario.3/@measurements.2 //@Scenario.3/@measurements.3 //@Scenario.3/@measurements.4 //@Scenario.3/@measurements.5 //@Scenario.3/@measurements.6 //@Scenario.3/@measurements.7 //@Scenario.3/@measurements.8 //@Scenario.3/@measurements.9 //@Scenario.3/@measurements.10 //@Scenario.3/@measurements.11 //@Scenario.3/@measurements.12 //@Scenario.3/@measurements.13 //@Scenario.3/@measurements.14 //@Scenario.3/@measurements.15 //@Scenario.3/@measurements.16 //@Scenario.3/@measurements.17 //@Scenario.3/@measurements.18 //@Scenario.3/@measurements.19 //@Scenario.3/@measurements.20 //@Scenario.3/@measurements.21 //@Scenario.3/@measurements.22 //@Scenario.3/@measurements.23" tos="0"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="start_buffering_15sec_default" Flow="//@Flow.0" payloadSize="2.9" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="buffer_update_5_sec_default" Flow="//@Flow.3 //@Flow.4 //@Flow.5 //@Flow.6 //@Flow.7 //@Flow.8 //@Flow.9 //@Flow.10 //@Flow.11 //@Flow.12 //@Flow.13 //@Flow.14 //@Flow.15 //@Flow.16 //@Flow.17 //@Flow.18 //@Flow.19 //@Flow.20 //@Flow.21 //@Flow.22 //@Flow.23 //@Flow.24" payloadSize="1" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="80" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="buffer_update_5_sec_HD" Flow="//@Flow.25 //@Flow.26 //@Flow.27 //@Flow.28 //@Flow.29 //@Flow.30 //@Flow.31 //@Flow.32 //@Flow.33 //@Flow.34 //@Flow.35 //@Flow.36 //@Flow.37 //@Flow.38 //@Flow.39 //@Flow.40 //@Flow.41 //@Flow.42 //@Flow.43 //@Flow.44 //@Flow.45 //@Flow.46" payloadSize="3.1" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="start_buffering_15_sec_HD" Flow="//@Flow.1" payloadSize="9.4" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="buffer_update_5_sec_UHD" Flow="//@Flow.47 //@Flow.48 //@Flow.49 //@Flow.50 //@Flow.51 //@Flow.52 //@Flow.53 //@Flow.54 //@Flow.55 //@Flow.56 //@Flow.57 //@Flow.58 //@Flow.59 //@Flow.60 //@Flow.61 //@Flow.62 //@Flow.63 //@Flow.64 //@Flow.65 //@Flow.66 //@Flow.67 //@Flow.68" payloadSize="15" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="start_buffering_15_sec_UHD" Flow="//@Flow.2" payloadSize="45" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="MBytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="uhd" Flow="//@Flow.69" payloadSize="Unlimited" windowSize="65535" windowScaling="true" rcvWindowScale="6" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="250.0" rateLimitUnit="Mbps" payloadUnit="Bytes" slowStart="65535"/>
+  <ByteBlowerGuiPort name="MODEM" theDestinationOfFlow="//@Flow.0 //@Flow.1 //@Flow.2 //@Flow.3 //@Flow.4 //@Flow.5 //@Flow.6 //@Flow.7 //@Flow.8 //@Flow.9 //@Flow.10 //@Flow.11 //@Flow.12 //@Flow.13 //@Flow.14 //@Flow.15 //@Flow.16 //@Flow.17 //@Flow.18 //@Flow.19 //@Flow.20 //@Flow.21 //@Flow.22 //@Flow.23 //@Flow.24 //@Flow.25 //@Flow.26 //@Flow.27 //@Flow.28 //@Flow.29 //@Flow.30 //@Flow.31 //@Flow.32 //@Flow.33 //@Flow.34 //@Flow.35 //@Flow.36 //@Flow.37 //@Flow.38 //@Flow.39 //@Flow.40 //@Flow.41 //@Flow.42 //@Flow.43 //@Flow.44 //@Flow.45 //@Flow.46 //@Flow.47 //@Flow.48 //@Flow.49 //@Flow.50 //@Flow.51 //@Flow.52 //@Flow.53 //@Flow.54 //@Flow.55 //@Flow.56 //@Flow.57 //@Flow.58 //@Flow.59 //@Flow.60 //@Flow.61 //@Flow.62 //@Flow.63 //@Flow.64 //@Flow.65 //@Flow.66 //@Flow.67 //@Flow.68 //@Flow.69" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>-126</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="0" physicalPortId="44" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="WAN" theSourceOfFlow="//@Flow.0 //@Flow.1 //@Flow.2 //@Flow.3 //@Flow.4 //@Flow.5 //@Flow.6 //@Flow.7 //@Flow.8 //@Flow.9 //@Flow.10 //@Flow.11 //@Flow.12 //@Flow.13 //@Flow.14 //@Flow.15 //@Flow.16 //@Flow.17 //@Flow.18 //@Flow.19 //@Flow.20 //@Flow.21 //@Flow.22 //@Flow.23 //@Flow.24 //@Flow.25 //@Flow.26 //@Flow.27 //@Flow.28 //@Flow.29 //@Flow.30 //@Flow.31 //@Flow.32 //@Flow.33 //@Flow.34 //@Flow.35 //@Flow.36 //@Flow.37 //@Flow.38 //@Flow.39 //@Flow.40 //@Flow.41 //@Flow.42 //@Flow.43 //@Flow.44 //@Flow.45 //@Flow.46 //@Flow.47 //@Flow.48 //@Flow.49 //@Flow.50 //@Flow.51 //@Flow.52 //@Flow.53 //@Flow.54 //@Flow.55 //@Flow.56 //@Flow.57 //@Flow.58 //@Flow.59 //@Flow.60 //@Flow.61 //@Flow.62 //@Flow.63 //@Flow.64 //@Flow.65 //@Flow.66 //@Flow.67 //@Flow.68 //@Flow.69" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>-126</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="1" physicalPortId="-1" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <Dhcp name="DHCP_1" MaximumDiscoverRetries="5" InitialDiscoverTimeout="1000000000" MaximumRequestRetries="5" InitialRequestTimeout="1000000000" RetransmissionPolicy="FixedTiming" ipv4Configurations="//@ByteBlowerGuiPort.0/@ipv4Configuration //@ByteBlowerGuiPort.1/@ipv4Configuration"/>
+</byteblowerguimodel_v1_3:ByteBlowerProject>
