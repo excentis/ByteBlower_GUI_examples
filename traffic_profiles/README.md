@@ -49,3 +49,21 @@ The second approach uses time based TCP flows. In contrast to the first you need
 less objects to configure in the ByteBlower GUI. This makes it more flexible.
 The downside is that is less realistic. There's no guarantee that the download
 retrieves the necessary amount.
+
+Both approaches hava a large download at their start. This emulates filling up
+the video buffer.
+
+### Scenario Default 
+In here we emulate 1.5 Mbit/s video flow. This is about 360p.
+
+
+### Scenario HD
+A 5Mbit/s video flow, close 720p a second.
+
+### Scenario UHD
+The last of the first video emulation approach. This scenario emulates a
+24Mbit/s video flow, or close to 4K.
+
+### Scenario UHD other approach
+In this scenario we use the time based approach to emulate the video traffic.
+We need only a signle HTTP flow.  This flow is reused multiple times. 
