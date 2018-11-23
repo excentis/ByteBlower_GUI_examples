@@ -36,5 +36,16 @@ show a backup being synchronized with a remote server.
 In this exmaple you'll find a couple examples on how to emulate a video stream.
 It includes 3 quality settings (default, High-Definition and Ultra High Definition).
 
-Of the last UHD profile, the project shows two ways to implement it.
+Of the last UHD profile, the project shows two ways to implement it. We'll briefly
+explain both in the paragragraphs below.
 
+
+The first approach uses payload based flows. This approach is closed to the DASH.
+In sequence it configures several downloads on an HTTP server. Each download 
+represents retrieving part of the video. The video-rate is emulated by changing
+the size of the download.
+
+The second approach uses time based TCP flows. In contrast to the first you need
+less objects to configure in the ByteBlower GUI. This makes it more flexible.
+The downside is that is less realistic. There's no guarantee that the download
+retrieves the necessary amount.
