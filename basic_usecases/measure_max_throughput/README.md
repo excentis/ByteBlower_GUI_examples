@@ -50,8 +50,8 @@ closer to the actual value. Straining systems way beyond their limits makes the
 results unreliable, it's not even unusual for devices to crash during the test.
 
 ### Good:
-* Easy to debug.
-* Easily control all parameters.
+* Easily to control, Easy to debug.
+* Gets results quickly.
 
 ### Bad:
 * Results vary on how close your initial estimate is, it Can be become repitive when trying to pick the best one. 
@@ -59,5 +59,22 @@ results unreliable, it's not even unusual for devices to crash during the test.
 
 
 ## RFC-2544 based throughput measurement
+Just like the previous approach you'll use FrameBalsting to load the system. A
+major improvement is that you'll let the ByteBlower GUI doing the guessing.
+This removes much of your workload, increases precission of the result but also
+results in a longer test duration.
+
+Configuring this test is done with the RFC-2544 wizard. In addition to the 
+chosing frame size, you can also configure how much loss you can affort to 
+sustain and how long the system should try each bandwidth
+
+
+### Good:
+* Reliable, controllable results for each setup.
+
+
+### Bad:
+* Long test time.
+* Requires some thougth on configuration parameters.
 
 
