@@ -35,7 +35,7 @@
   <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingBenchmark" name="RFC_2544_TEMPLATE_1" duration="20000000000" resolution="0.001" acceptableLoss="1.0">
     <frames name="frame_60" weight="1" size="60"/>
   </FlowTemplate>
-  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingBenchmark" name="RFC_2544_TEMPLATE_2" Flow="//@Flow.2" duration="20000000000" resolution="0.001" acceptableLoss="0.0">
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingBenchmark" name="RFC_2544_TEMPLATE_2" Flow="//@Flow.2" duration="20000000000" resolution="0.001" acceptableLoss="0.01">
     <frames name="frame_60" weight="1" size="60"/>
   </FlowTemplate>
   <Frame name="small_packets" bytesHexString="00000000000000000000000008004500002E02780000FE11B643010101010101010110001000001A7823457863656E7469732042797465426C6F7765" L2AutoSourceMac="true" L2AutoDestMac="true" L3AutoSourceIp="true" L3AutoDestIp="true" L3AutoHeaderCheck="true" L3AutoTotLen="true" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="true" L4AutoTotLen="true" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.0" L4AllowPortOverride="true">
