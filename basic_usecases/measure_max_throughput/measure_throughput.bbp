@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ASCII"?>
+<byteblowerguimodel_v1_3:ByteBlowerProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:byteblowerguimodel_v1_3="http:///com.excentis.products.byteblower.gui.model.ecore" name="measure_throughput" author="pieter_v" modelVersion="2.9.6" defaultBatchInitializationTime="10000000000" warningLossLevel="0.01" errorLossLevel="0.02" reportOutputToHtml="true" reportOutputToExcel="false" reportOutputToCsv="true" reportProjectBackup="true" throughputUnit="kbps" scenarioIdenticalFramesWarning="true" scenarioPauseAfterDhcp="true" scenarioEnableScoutingFrames="false" scenarioIgnoreInitializationErrors="false" scenarioWaitTimeAfterScenario="5000000000" throughputType="FrameAndAllOtherFields" dhcpTimeout="1000000000" numberOfDecimals="2" dhcpRetries="5" latencyRangeStart="0" latencyRangeEnd="100000000" latencyUnit="17" numberOfLatencyDecimals="3" reportOutputToPdf="false" ScenarioHttpAllowAlive="9223372036854775807" scenarioAutomaticTcpRestart="true">
+  <Scenario name="TCP throughput" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.0">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="30000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="Max_frame_blasting" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.1">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.1">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="30000000000"/>
+    </measurements>
+  </Scenario>
+  <Scenario name="RFC_2544 throughput test" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.2">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.2">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="529000000000"/>
+    </measurements>
+  </Scenario>
+  <Batch name="BATCH_1" startType="Relative">
+    <batchActionBlocks>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.0"/>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.1"/>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.2"/>
+    </batchActionBlocks>
+  </Batch>
+  <Flow name="TCP_flow" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
+  <Flow name="Fast_UDP flow" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
+  <Flow name="RFC_2544_FLOW_1" source="//@ByteBlowerGuiPort.1" destination="//@ByteBlowerGuiPort.0" FlowTemplate="//@FlowTemplate.3" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.0" tos="0"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingFlow" name="FRAME_BLASTING_1" Flow="//@Flow.1" frameInterval="704" dataRateUnit="Gbps">
+    <frameBlastingFrames weight="1" frame="//@Frame.0"/>
+  </FlowTemplate>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:TcpFlow" name="TCP_1" Flow="//@Flow.0" payloadSize="Unlimited" windowSize="65535" windowScaling="true" rcvWindowScale="8" clientPort="Automatic" HTTPMethod="Auto" TCPCongestionAvoidanceAlgorithm="SACK" serverPort="Automatic" rateLimit="0.0" rateLimitUnit="Mbps" payloadUnit="Bytes" slowStart="65535"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingBenchmark" name="RFC_2544_TEMPLATE_1" duration="20000000000" resolution="0.001" acceptableLoss="1.0">
+    <frames name="frame_60" weight="1" size="60"/>
+  </FlowTemplate>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingBenchmark" name="RFC_2544_TEMPLATE_2" Flow="//@Flow.2" duration="20000000000" resolution="0.001" acceptableLoss="0.0">
+    <frames name="frame_60" weight="1" size="60"/>
+  </FlowTemplate>
+  <Frame name="small_packets" bytesHexString="00000000000000000000000008004500002E02780000FE11B643010101010101010110001000001A7823457863656E7469732042797465426C6F7765" L2AutoSourceMac="true" L2AutoDestMac="true" L3AutoSourceIp="true" L3AutoDestIp="true" L3AutoHeaderCheck="true" L3AutoTotLen="true" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="true" L4AutoTotLen="true" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.0" L4AllowPortOverride="true">
+    <modifiers xsi:type="byteblowerguimodel_v1_3:UniqueFieldModifier" fieldLength="1" offset="0"/>
+  </Frame>
+  <ByteBlowerGuiPort name="WAN" theDestinationOfFlow="//@Flow.0 //@Flow.1 //@Flow.2" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>34</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="1" physicalPortId="-1" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="LAN" theSourceOfFlow="//@Flow.0 //@Flow.1 //@Flow.2" natted="true" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>34</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="DHCPv4" dhcpOptions="//@Dhcp.0">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="byteblower-tutorial-1300.lab.byteblower.excentis.com" physicalInterfaceId="0" physicalPortId="44" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="RFC_2544_SOURCE_1" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="Fixed">
+      <IpAddress>
+        <bytes>10</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>10</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="RFC_2544_DESTINATION_1" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="Fixed">
+      <IpAddress>
+        <bytes>10</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>3</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>10</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <Dhcp name="DHCP_1" MaximumDiscoverRetries="5" InitialDiscoverTimeout="1000000000" MaximumRequestRetries="5" InitialRequestTimeout="1000000000" RetransmissionPolicy="FixedTiming" ipv4Configurations="//@ByteBlowerGuiPort.0/@ipv4Configuration //@ByteBlowerGuiPort.1/@ipv4Configuration"/>
+</byteblowerguimodel_v1_3:ByteBlowerProject>
