@@ -38,27 +38,26 @@ limit the rate we're sending out packets, our only interest is the amount of
 received data. This approach requires a bit of work to set it up, but pays
 itself off down the road.
 
-Creating a FrameBlasting based throughput measurement. Starts first with
-choosing the packet size. Large packets (1500 bytes) tend to load the mostly
-the network, while with smaller sizes you can search for packet-processing
-bottlenecks. You can also mix different packet sizes to make the test more
-realistic.
+Creating a FrameBlasting based throughput measurement starts with choosing the
+packet size. Large packets (1500 bytes) tend to load the mostly the network,
+while with smaller sizes you can search for packet-processing bottlenecks. You
+can also mix different packet sizes to make the test more realistic.
 
 After the picking packet sizes, you'll need to estimate the bandwidth of the
-setup. The load configured for the FrameBlasting flow should be higher then
-your expectation.  An easy guess is choosing 10 Gbit/s, but it helps to be
-closer to the actual value.  It's not unusual for the device under test to
-crash and reboot when strained way beyond normal operation.
+setup. The load configured for the FrameBlasting flow should be higher then the
+availabel bandwidth. An easy guess is choosing 10 Gbit/s, but it helps to be
+closer to the actual value. Straining systems way beyond their limits makes the
+results unreliable, it's not even unusual for devices to crash during the test.
 
 ### Good:
 * Easy to debug.
 * Easily control all parameters.
 
 ### Bad:
-* Overloading the system too much makes the results variable.
-* Can be become repitive when trying to pick the best estimate inital estimate. 
-* Requires some inital setup work.
+* Results vary on how close your initial estimate is, it Can be become repitive when trying to pick the best one. 
+* Requires inital setup work.
 
 
 ## RFC-2544 based throughput measurement
+
 
