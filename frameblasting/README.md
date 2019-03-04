@@ -1,20 +1,17 @@
 #  FrameBlasting examples
 
 On this directory you'll find the FrameBlasting examples. To use them you'll need 
-to redock the ports. 
+to redock the ByteBlower Ports. 
 
 ## Intro: What is FrameBlasting?
 
-FrameBlasting is one of the two traffic generation modes of the ByteBlower. The
-basic use case is loading the network with UDP traffic.
+FrameBlasting is one of the two traffic generation modes of the ByteBlower. Altough
+the most common use case is UDP traffic, you can sent out any type of traffic.
 
 
 ## frameblasting_basic.bbp
 This project has a couple basic FrameBlasting examples. It sends traffic
 between two ByteBlower interfaces. 
-
-It shows the basic use-case of (slightly) loading the network with UDP 
-traffic. 
 
 A good first step after this example is to increase the speed of the flows
 drastically. Since 2.9.0, most models should easily be able to sent these
