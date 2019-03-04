@@ -27,6 +27,14 @@ This scenario also send UDP packets. As an example the UDP port has been changed
 This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
+## Latency.bbp
+Frameblasting flows can be used for Latency Measurements. This project shows
+a couple use-cases.
+
+* Ex 1. default-latency: The default latency measurement.
+* Ex 2. Latency under load: In the same scenario we measure both the base latency and the latency when the network fully loaded (1Gbit/s).
+* Ex 3. Latency with TCP: An example of combining both latency measurement with a Tcp flow. 
+
 ## NAT.bbp
 
 This project shows a couple tests of a NAT device. 
