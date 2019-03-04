@@ -27,31 +27,6 @@ This scenario also send UDP packets. As an example the UDP port has been changed
 This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
-## frameblasting_odd_packets.bbp
-In this project we deviate from the standard usecase: instead of nice UDP
-traffic we'll challenge the network with purposely wrong traffic.
-
-The project assumes that the ByteBlower ports are docked behind a NAT-device
-(or any type of modem or access point). We make this assumption mostly because
-such devices are the most senstive to the generated traffic.
-
-A default, UDP frameblasting flow checks whether we are successful in disrupting the
-device under test.
-
-### Ex 1. Syn blasting
-This scenario floods the netwerk with TCP-syn packets. The NAT-device should ignore them fairly quickly.
-
-### Ex 2. Wrong checksums
-Small packets with purposely wrong IPv4 header checksum and IPv4 length.
-
-### Ex 3. Wrong Ether types
-Sends out traffic with an uncommon Ether type (0x500)
-
-### Ex 4. Broadcast traffic
-An example how to broadcast UDP traffic. This the most benign of all the
-scenarios. The rate is also fairly low (<1 MBit/s).
-
-
 ## NAT.bbp
 
 This project shows a couple tests of a NAT device. 
@@ -83,3 +58,30 @@ as the first scenario, but the duration is much longer.
 ### Scenario: Ex4. Blocked traffic
 Unlike the previous scenarios, this is a negative test: we don't expect any
 traffic to through here.
+
+## frameblasting_odd_packets.bbp
+In this project we deviate from the standard usecase: instead of nice UDP
+traffic we'll challenge the network with purposely wrong traffic.
+
+The project assumes that the ByteBlower ports are docked behind a NAT-device
+(or any type of modem or access point). We make this assumption mostly because
+such devices are the most senstive to the generated traffic.
+
+A default, UDP frameblasting flow checks whether we are successful in disrupting the
+device under test.
+
+### Ex 1. Syn blasting
+This scenario floods the netwerk with TCP-syn packets. The NAT-device should ignore them fairly quickly.
+
+### Ex 2. Wrong checksums
+Small packets with purposely wrong IPv4 header checksum and IPv4 length.
+
+### Ex 3. Wrong Ether types
+Sends out traffic with an uncommon Ether type (0x500)
+
+### Ex 4. Broadcast traffic
+An example how to broadcast UDP traffic. This the most benign of all the
+scenarios. The rate is also fairly low (<1 MBit/s).
+
+
+
