@@ -17,7 +17,7 @@ estimate of how fast users can go.
 
 To set it up, you'll only need to configure a TCP flow. You tweak the TCP
 settings in the TCP view, but at this point it's probably better to look at the
-other apporaches below. The sole expection is perhaps the receive window, this
+other approaches below. The sole expectation is perhaps the receive window, this
 value should be as high as possible: start from 8.
 
 ### Good:
@@ -26,7 +26,7 @@ value should be as high as possible: start from 8.
 
 
 ### Bad:
-* Result can vary significantly, especially when one part in the system isn't mishaving.
+* Result can vary significantly, especially when one part in the system isn't behaving properly.
 * Not easy measuring speed at different packet sizes.
 * Sends traffic in both up- and downstream.
 
@@ -45,7 +45,7 @@ can also mix different packet sizes to make the test more realistic.
 
 After the picking packet sizes, you'll need to estimate the bandwidth of the
 setup. The load configured for the FrameBlasting flow should be higher then the
-availabel bandwidth. An easy guess is choosing 10 Gbit/s, but it helps to be
+available bandwidth. An easy guess is choosing 10 Gbit/s, but it helps to be
 closer to the actual value. Straining systems way beyond their limits makes the
 results unreliable, it's not even unusual for devices to crash during the test.
 
@@ -54,18 +54,18 @@ results unreliable, it's not even unusual for devices to crash during the test.
 * Gets results quickly.
 
 ### Bad:
-* Results vary on how close your initial estimate is, it Can be become repitive when trying to pick the best one. 
-* Requires inital setup work.
+* Results vary on how close your initial estimate is, it Can be become repetitive when trying to pick the best one. 
+* Requires initial setup work.
 
 
 ## RFC-2544 based throughput measurement
-Just like the previous approach you'll use FrameBalsting to load the system. A
+Just like the previous approach you'll use FrameBlasting to load the system. A
 major improvement is that you'll let the ByteBlower GUI doing the guessing.
-This removes much of your workload, increases precission of the result but also
+This removes much of your workload, increases precision of the result but also
 results in a longer test duration.
 
 Configuring this test is done with the RFC-2544 wizard. In addition to the 
-chosing frame size, you can also configure how much loss you can affort to 
+choosing frame size, you can also configure how much loss you can afford to 
 sustain and how long the system should try each bandwidth
 
 
@@ -75,6 +75,6 @@ sustain and how long the system should try each bandwidth
 
 ### Bad:
 * Long test time.
-* Requires some thougth on configuration parameters.
+* Requires some thought on configuration parameters.
 
 

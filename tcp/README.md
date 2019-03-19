@@ -13,20 +13,20 @@ first begin with those.
 A TCP flow with a ratelimit of 60 Mbit. This ratelimit is part of the TCP
 template. You'll configure it on the TCP view.
 
-### Scenario: Ex2: TCP serveral window scales
+### Scenario: Ex2: TCP several window scales
 This scenario has 3 flows. Each flow has a slightly different TCP
 configuration, the windowscale is configured to 0, 1 (times 2), 8 (times 256).
 To show the effect of these values, there's no overlap between the flows.
 
-If there's suffucient bandwidth available, you'll notice that:
+If there's sufficient bandwidth available, you'll notice that:
 * The flow with windows scale 1 is almost twice as fast compared to the window scale 0.
 * Only the flow with window scale 8 fills the whole capacity of the line.
 
 ### Scenario: Ex3. Slow starting TCP flow
 
 
-### Scenario: Ex4a. Compoeting window scales
+### Scenario: Ex4a. Competing window scales
 
-### Scenario: Ex4b. Compoeting Congestion algortihms
+### Scenario: Ex4b. Comporting Congestion algorithms
 
 ### Scenario: Ex4c. Competing start time

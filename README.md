@@ -10,8 +10,8 @@ This github project collects examples for the ByteBlower GUI.
 
 ## Folders:
 
-* frameblasting: stateless frameblasting. This is mostly UDP traffic, although we also show howto send out custom made packets.
-* tcp: statefull tcp. These examples show howto load the network with TCP traffic. 
+* frameblasting: stateless frameblasting. This is mostly UDP traffic, although we also show how-to send out custom made packets.
+* tcp: state-full tcp. These examples show how-to load the network with TCP traffic. 
 * basic_usecases: You'll find here a couple worked out use cases. These are useful to get started with actual testing. 
 * multicast: Examples around multicast. Both IPv4 (IGMP) and IPv6 (MLD) are available.
-* traffic profiles: In this folder you'll find realworld usecases implemented using the ByteBlower building blocks.
+* traffic profiles: In this folder you'll find real-world usecases implemented using the ByteBlower building blocks.

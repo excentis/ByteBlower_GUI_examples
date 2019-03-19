@@ -1,11 +1,11 @@
 #  FrameBlasting examples
 
 On this directory you'll find the FrameBlasting examples. To use them you'll need 
-to redock the ByteBlower Ports. 
+to re-dock the ByteBlower Ports. 
 
 ## Intro: What is FrameBlasting?
 
-FrameBlasting is one of the two traffic generation modes of the ByteBlower. Altough
+FrameBlasting is one of the two traffic generation modes of the ByteBlower. Although
 the most common use case is UDP traffic, you can sent out any type of traffic.
 
 
@@ -40,7 +40,7 @@ a couple use-cases.
 This project shows a couple tests of a NAT device. 
 
 The project uses 4 ByteBlower ports: one is docked in the WAN, the other 3 are
-behind the NAT device. The Port on the WAN side is publicly acessible.
+behind the NAT device. The Port on the WAN side is publicly accessible.
 You'll notice that even though all ByteBlower ports are behind the NAT, we've only
 enabled the NAT flag on two of them.
 
@@ -73,13 +73,13 @@ traffic we'll challenge the network with purposely wrong traffic.
 
 The project assumes that the ByteBlower ports are docked behind a NAT-device
 (or any type of modem or access point). We make this assumption mostly because
-such devices are the most senstive to the generated traffic.
+such devices are the most sensitive to the generated traffic.
 
 A default, UDP frameblasting flow checks whether we are successful in disrupting the
 device under test.
 
 ### Ex 1. Syn blasting
-This scenario floods the netwerk with TCP-syn packets. The NAT-device should ignore them fairly quickly.
+This scenario floods the network with TCP-syn packets. The NAT-device should ignore them fairly quickly.
 
 ### Ex 2. Wrong checksums
 Small packets with purposely wrong IPv4 header checksum and IPv4 length.

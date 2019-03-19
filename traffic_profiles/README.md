@@ -12,7 +12,7 @@ This scenario visits a website. During this visits several files are
 download from a 9 different web servers.
 
 ## Traffic profile: Gaming
-Emulates a gaming session taking place. Durign this session there's
+Emulates a gaming session taking place. During this session there's
 a small upstream load with updates from the game client. The gaming
 server sends a regular update downstream.
 
@@ -33,11 +33,11 @@ show a backup being synchronized with a remote server.
 
 
 ## Traffic profile: Video streaming
-In this exmaple you'll find a couple examples on how to emulate a video stream.
+In this example you'll find a couple examples on how to emulate a video stream.
 It includes 3 quality settings (default, High-Definition and Ultra High Definition).
 
 Of the last UHD profile, the project shows two ways to implement it. We'll briefly
-explain both in the paragragraphs below.
+explain both in the paragraphs below.
 
 
 The first approach uses payload based flows. This approach is closed to the DASH.
@@ -50,7 +50,7 @@ less objects to configure in the ByteBlower GUI. This makes it more flexible.
 The downside is that is less realistic. There's no guarantee that the download
 retrieves the necessary amount.
 
-Both approaches hava a large download at their start. This emulates filling up
+Both approaches have a large download at their start. This emulates filling up
 the video buffer.
 
 ### Scenario Default 
@@ -66,4 +66,4 @@ The last of the first video emulation approach. This scenario emulates a
 
 ### Scenario UHD other approach
 In this scenario we use the time based approach to emulate the video traffic.
-We need only a signle HTTP flow.  This flow is reused multiple times. 
+We need only a single HTTP flow.  This flow is reused multiple times. 
