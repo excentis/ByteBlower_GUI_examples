@@ -58,16 +58,33 @@ def find_docking(serverAddress, new_docking):
         pass
     # We couldn't ask the ByteBlower Server for the port.
     # Let's take an educated guess.
-
-
+    port_id = -1
+    interface_id = -1
+    if 'nontrunk' in new_docking:
+        port_id = -1
+        splitted = new_docking.split('-')[1] 
+        if len(splitted) == 2:
+            interface_id = splitted[1]
+        else:
+            interface_id = -1
+    elif 'trunk' in new_docking:
+        splitted = new_docking.split('-')[1] 
+        port_id = interface_id = -1
+        if len(splitted) == 3:
+            interface_id = splitted[1]
+            port_id = splitted[2]
+             
+    return (interface_id, port_id)
 
 def change_port_docking(port, new_server_address, new_docking):
     for portConfig in port.iterfind('ByteBlowerGuiPortConfiguration'):
-        server_address = new_server_address or portConfig['physicalServerAddress']
+        attributes = portConfig.attrib
+        server_address = new_server_address or attributes['physicalServerAddress']
         interface_id, port_id = find_docking(server_address, new_docking) 
-        portConfig.attrib['physicalInterfaceId'] = str(interface_id)
-        portConfig.attrib['physicalPortId'] = str(port_id)
-        portConfig.attrib['physicalServerAddress'] = server_address 
+
+        attributes['physicalInterfaceId'] = str(interface_id)
+        attributes['physicalPortId'] = str(port_id)
+        attributes['physicalServerAddress'] = server_address 
        
 
 def write_project(project, new_file):
@@ -75,7 +92,7 @@ def write_project(project, new_file):
 
 
 def main():
-    if 4 <= len(sys.argv)  <= 5:
+    if not(5 <= len(sys.argv)  <= 6):
         print('Expected 4 or 5 arguments:')
         print('     Same ByteBlower Server:       <src bbp> <target bpp> <port name> <new docking>')
         print('     Different ByteBlower Sserver: <src bbp> <target bpp> <port name> <server-address> <new docking>')
