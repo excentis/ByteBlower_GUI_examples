@@ -30,14 +30,12 @@ def find_docking(serverAddress, new_docking):
         def find_ids(server, to_search):
             interf = None
             for existing in server.PhysicalInterfacesGet():
-                print(existing.NameGet())
                 if to_search == existing.NameGet():
                     interf = existing
                     break
             else:
               interf = server.InterfaceGetByName(to_search)
                    
-            print(dir(interf))
             try:
                 interface_id = interf.GetPhysicalInterface().IdGet()
                 port_id = interf.PortIdGet()
@@ -57,7 +55,7 @@ def find_docking(serverAddress, new_docking):
         server = api.ServerAdd(serverAddress, 9002, a_second)
         return find_ids(server, new_docking)
     except Exception as e:
-        print(e)
+        pass
     # We couldn't ask the ByteBlower Server for the port.
     # Let's take an educated guess.
 
