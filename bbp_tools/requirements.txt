@@ -1,2 +1,2 @@
 lxml
-byteblower-api
+byteblower
