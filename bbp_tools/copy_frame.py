@@ -1,6 +1,10 @@
 """
     A small tool to duplicate frames
-    if activated, you can let increment the udp_srcport and udp_dstport
+    if wanted, you can let the udp_srcport and udp_dstport increment
+
+    Usage: python copy_frame.py -i <inputfile> -o <outputfile> -n <int> [--sport] [--dport]")
+    Show help: python -h
+
 """
 import sys
 import getopt

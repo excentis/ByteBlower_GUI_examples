@@ -25,12 +25,14 @@ Some of the scripts need the ByteBlower-API (mostly redocking). An installer is 
 ## change_server.py
 
 ## copy_frame.py
-With this script you can duplicate your frame inside your project and if needed let the UDP source port and|of destination port increment.
+With this script you can duplicate your frame inside your project and if needed let the UDP source port and|of destination port increment. The result if saved in your output file.
 
 
 Usage example: `python copy_frame.py -i myProject.bbp -o LotsOfFrames.bbp -n 100 --sport --dport`
 
 The above command will create a copy of the myProject.bbp file to LotsOfFrames.bbp. In the new project file, it will seek your frame and make 100 copies of that frame. The UDP source port will be incremented as well as the UDP destination port.
+
+Show help: `python copy_frame.py -h`
 
 ## frame_size.py
 
