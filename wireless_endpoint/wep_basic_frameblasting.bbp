@@ -22,7 +22,7 @@
       <flowStopEvent scheduledTime="10000000000"/>
     </measurements>
   </Scenario>
-  <Scenario name="Imix WEP to BB" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.3">
+  <Scenario name="IMIX WEP to BB" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.3">
     <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
       <flowStartEvent scheduledTime="0"/>
       <flowStopEvent scheduledTime="10000000000"/>
