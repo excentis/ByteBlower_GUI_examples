@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="ASCII"?>
 <byteblowerguimodel_v1_3:ByteBlowerProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:byteblowerguimodel_v1_3="http:///com.excentis.products.byteblower.gui.model.ecore" name="ByteBlower_Project_17" author="pieter.v" modelVersion="2.13.0" defaultBatchInitializationTime="10000000000" warningLossLevel="0.01" errorLossLevel="0.02" reportOutputToHtml="true" reportOutputToExcel="false" reportOutputToCsv="true" reportOutputToJson="false" reportProjectBackup="true" usingHighcharts="true" throughputUnit="kbps" scenarioIdenticalFramesWarning="true" scenarioPauseAfterDhcp="true" scenarioEnableScoutingFrames="true" scenarioIgnoreInitializationErrors="false" scenarioWaitTimeAfterScenario="5000000000" throughputType="FrameOnly" dhcpTimeout="1000000000" numberOfDecimals="2" dhcpRetries="5" latencyRangeStart="0" latencyRangeEnd="100000000" latencyUnit="17" numberOfLatencyDecimals="3" reportOutputToPdf="false" ScenarioHttpAllowAlive="9223372036854775807" scenarioAutomaticTcpRestart="true">
-  <Scenario name="Ex 1. frameblasting">
+  <Scenario name="Ex 1. frameblasting" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.0">
     <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
       <flowStartEvent scheduledTime="0"/>
       <flowStopEvent scheduledTime="10000000000"/>
     </measurements>
   </Scenario>
-  <Scenario name="Ex 2. upd port change">
+  <Scenario name="Ex 2. upd port change" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.1">
     <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.1">
       <flowStartEvent scheduledTime="0"/>
       <flowStopEvent scheduledTime="10000000000"/>
     </measurements>
   </Scenario>
-  <Scenario name="Ex 3. frameblasting_IPv6">
+  <Scenario name="Ex 3. frameblasting_IPv6" batchActions="//@Batch.0/@batchActionBlocks.0/@batchActions.2">
     <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.2">
       <flowStartEvent scheduledTime="0"/>
       <flowStopEvent scheduledTime="10000000000"/>
     </measurements>
   </Scenario>
+  <Batch name="all_scenarios" startType="Relative">
+    <batchActionBlocks>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.0"/>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.1"/>
+      <batchActions startTime="0" initializationTime="0" scenario="//@Scenario.2"/>
+    </batchActionBlocks>
+  </Batch>
   <Flow name="FLOW_1" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
   <Flow name="UDP port 9000" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.1" latencyAndJitterType="No" flowMeasurement="//@Scenario.1/@measurements.0" tos="0"/>
   <Flow name="IPv6" source="//@ByteBlowerGuiPort.2" destination="//@ByteBlowerGuiPort.3" FlowTemplate="//@FlowTemplate.2" latencyAndJitterType="No" flowMeasurement="//@Scenario.2/@measurements.0" tos="0"/>
