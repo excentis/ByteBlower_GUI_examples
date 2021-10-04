@@ -11,6 +11,11 @@ offers you precies control over content and transmission speed.
 The most common use case is generating UDP traffic. 4 out of the 5 examples will demonstrate 
 this. The odd frames example is an exception, check this project out for the other traffic types.
 
+Each of the sections each reference one of the ByteBlower project files. To get started,
+* Download and open the file in the ByteBlower GUI.
+* Read the associated secion
+* Create the setup and rerun the tests.
+
 ## frameblasting_basic.bbp
 This project has a couple basic FrameBlasting examples. The main goal is to show the essentials
 behind FrameBlasting: ByteBlower ports, configuring speed and modifiying the contents of the traffic..
