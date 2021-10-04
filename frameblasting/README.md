@@ -5,17 +5,19 @@ to re-dock the ByteBlower Ports.
 
 ## Intro: What is FrameBlasting?
 
-FrameBlasting is one of the two traffic generation modes of the ByteBlower. Although
-the most common use case is UDP traffic, you can sent out any type of traffic.
+FrameBlasting is one of the two traffic generation modes of the ByteBlower. The system
+offers you precies control over content and transmission speed.
 
+The most common use case is generating UDP traffic. 4 out of the 5 examples will demonstrate 
+this. The odd frames example is an exception, check this project out for the other traffic types.
 
 ## frameblasting_basic.bbp
-This project has a couple basic FrameBlasting examples. It sends traffic
-between two ByteBlower interfaces. 
+This project has a couple basic FrameBlasting examples. The main goal is to show the essentials
+behind FrameBlasting: ByteBlower ports, configuring speed and modifiying the contents of the traffic..
 
-A good first step after this example is to increase the speed of the flows
-drastically. Since 2.9.0, most models should easily be able to sent these
-frames at line-rate.
+In all cases traffic is generated between 2 ByteBlower Interfaces: trunk-1-1 and trunk-1-2. Just like the 
+[quicktest](https://setup.byteblower.com/setup.php?type=5100#using), this project assumes a direct
+connection between between both interfaces. Creating this setup the first step to get started. 
 
 ### Scenario: Ex1. frameblasting
 The default FrameBlasting flow. Fairly large UDP packets (1024 bytes) being sent from PORT_1 to PORT_2.
