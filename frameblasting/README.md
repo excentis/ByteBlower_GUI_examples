@@ -29,10 +29,10 @@ connection between between both interfaces. Creating this setup the first step t
 ### Scenario: Ex1. frameblasting [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 The default FrameBlasting flow. Fairly large UDP packets (1024 bytes) being sent from PORT_1 to PORT_2.
 
-### Scenario: Ex2. udp_port_change
+### Scenario: Ex2. udp_port_change  [(example report)](https://htmlpreview.github.io/?https://github.com/excentis/ByteBlower_GUI_examples/blob/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%202.%20upd%20port%20change%20-%2020211011_214840__1.html)
 This scenario also send UDP packets. As an example the UDP port has been changed to port 9000
 
-### Scenario: Ex3. frameblasting_IPv6
+### Scenario: Ex3. frameblasting_IPv6  [(example report)](https://htmlpreview.github.io/?https://github.com/excentis/ByteBlower_GUI_examples/blob/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%203.%20frameblasting_IPv6%20-%2020211011_214902__1.html)
 This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
