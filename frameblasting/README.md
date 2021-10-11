@@ -26,7 +26,7 @@ In all cases traffic is generated between 2 ByteBlower Interfaces: trunk-1-1 and
 [quicktest](https://setup.byteblower.com/setup.php?type=5100#using), this project assumes a direct
 connection between between both interfaces. Creating this setup the first step to get started. 
 
-### Scenario: Ex1. frameblasting
+### Scenario: Ex1. frameblasting [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 The default FrameBlasting flow. Fairly large UDP packets (1024 bytes) being sent from PORT_1 to PORT_2.
 
 ### Scenario: Ex2. udp_port_change
