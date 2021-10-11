@@ -40,9 +40,17 @@ view, you'll note that the Layer3 has been configured to IPV6.
 Frameblasting flows can be used for Latency Measurements. This project shows
 a couple use-cases.
 
-* Ex 1. default-latency: The default latency measurement.
-* Ex 2. Latency under load: In the same scenario we measure both the base latency and the latency when the network fully loaded (1Gbit/s).
-* Ex 3. Latency with TCP: An example of combining both latency measurement with a Tcp flow. 
+### Scenario: Ex 1. default-latency
+This scenario shows the default latency measurement. Almost everything is the same as the basic frameblasting case shown higher. The sole difference is in the Flow View where latency is enabled in the 'Latency' Column of a FrameBlasting flow. The following options are available:
+* **Average** provides latency results over time
+* **Distribution** adds extra Latency CCDF and Distribution, in addition to the latency results over time.
+* **No** disables latency measurements for the FrameBlasting flow.
+These options are only available for FrameBlasting. 
+For TCP, there is are RTT value. These values are always shown, when available.
+### Scenario: Ex 2. Latency under load
+In the same scenario we measure both the base latency and the latency when the network fully loaded (1Gbit/s).
+### Scenario: Ex 3. Latency with TCP
+An example of combining both latency measurement with a Tcp flow. 
 
 ## NAT.bbp
 
@@ -87,16 +95,16 @@ such devices are the most sensitive to the generated traffic.
 A default, UDP frameblasting flow checks whether we are successful in disrupting the
 device under test.
 
-### Ex 1. Syn blasting
+### Scenario: Ex 1. Syn blasting
 This scenario floods the network with TCP-syn packets. The NAT-device should ignore them fairly quickly.
 
-### Ex 2. Wrong checksums
+### Scenario: Ex 2. Wrong checksums
 Small packets with purposely wrong IPv4 header checksum and IPv4 length.
 
-### Ex 3. Wrong Ether types
+### Scenario: Ex 3. Wrong Ether types
 Sends out traffic with an uncommon Ether type (0x500)
 
-### Ex 4. Broadcast traffic
+### Scenario: Ex 4. Broadcast traffic
 An example how to broadcast UDP traffic. This the most benign of all the
 scenarios. The rate is also fairly low (<1 MBit/s).
 
