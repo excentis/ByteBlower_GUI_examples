@@ -36,7 +36,10 @@ This scenario also send UDP packets. As an example the UDP port has been changed
 This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
 
-## Latency.bbp
+## frameblasting_latency.bbp
+<a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_latency.bbp"> Download link </a>
+
+
 Frameblasting flows can be used for Latency Measurements. This project shows
 a couple use-cases.
 
@@ -52,7 +55,10 @@ In the same scenario we measure both the base latency and the latency when the n
 ### Scenario: Ex 3. Latency with TCP
 An example of combining both latency measurement with a Tcp flow. 
 
-## NAT.bbp
+## frameblasting_nat.bbp
+<a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_nat.bbp"> Download link </a>
+
+
 
 This project shows a couple tests of a NAT device. 
 
@@ -85,6 +91,9 @@ Unlike the previous scenarios, this is a negative test: we don't expect any
 traffic to through here.
 
 ## frameblasting_odd_packets.bbp
+<a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_odd_packets.bbp"> Download link </a>
+
+
 In this project we deviate from the standard usecase: instead of nice UDP
 traffic we'll challenge the network with purposely wrong traffic.
 
