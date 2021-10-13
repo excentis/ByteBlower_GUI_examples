@@ -15,7 +15,7 @@ Each of the sections each reference one of the ByteBlower project files. To get 
 * Download and open the file in the ByteBlower GUI.
 * Read the associated secion
 * Create the setup and rerun the tests.
-
+___
 ## frameblasting_basic.bbp
 <a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_basic.bbp"> Download link </a>
 
@@ -35,7 +35,7 @@ This scenario also send UDP packets. As an example the UDP port has been changed
 ### Scenario: Ex3. frameblasting_IPv6  [(example report)](https://htmlpreview.github.io/?https://github.com/excentis/ByteBlower_GUI_examples/blob/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%203.%20frameblasting_IPv6%20-%2020211011_214902__1.html)
 This example is very similar to the first case, only it uses IPv6. In the Frame
 view, you'll note that the Layer3 has been configured to IPV6.
-
+___
 ## frameblasting_latency.bbp
 <a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_latency.bbp"> Download link </a>
 
@@ -54,7 +54,7 @@ For TCP, there is are RTT value. These values are always shown, when available.
 In the same scenario we measure both the base latency and the latency when the network fully loaded (1Gbit/s).
 ### Scenario: Ex 3. Latency with TCP  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 An example of combining both latency measurement with a Tcp flow. 
-
+___
 ## frameblasting_nat.bbp
 <a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_nat.bbp"> Download link </a>
 
@@ -89,7 +89,7 @@ as the first scenario, but the duration is much longer.
 ### Scenario: Ex4. Blocked traffic  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 Unlike the previous scenarios, this is a negative test: we don't expect any
 traffic to through here.
-
+___
 ## frameblasting_odd_packets.bbp
 <a id="raw-url" href="https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/frameblasting_basic.bbp" download="frameblasting_odd_packets.bbp"> Download link </a>
 
