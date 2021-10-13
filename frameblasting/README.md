@@ -43,16 +43,16 @@ view, you'll note that the Layer3 has been configured to IPV6.
 Frameblasting flows can be used for Latency Measurements. This project shows
 a couple use-cases.
 
-### Scenario: Ex 1. default-latency
+### Scenario: Ex 1. default-latency  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 This scenario shows the default latency measurement. Almost everything is the same as the basic frameblasting case shown higher. The sole difference is in the Flow View where latency is enabled in the 'Latency' Column of a FrameBlasting flow. The following options are available:
 * **Average** provides latency results over time
 * **Distribution** adds extra Latency CCDF and Distribution, in addition to the latency results over time.
 * **No** disables latency measurements for the FrameBlasting flow.
 These options are only available for FrameBlasting. 
 For TCP, there is are RTT value. These values are always shown, when available.
-### Scenario: Ex 2. Latency under load
+### Scenario: Ex 2. Latency under load  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 In the same scenario we measure both the base latency and the latency when the network fully loaded (1Gbit/s).
-### Scenario: Ex 3. Latency with TCP
+### Scenario: Ex 3. Latency with TCP  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 An example of combining both latency measurement with a Tcp flow. 
 
 ## frameblasting_nat.bbp
@@ -68,25 +68,25 @@ You'll notice that even though all ByteBlower ports are behind the NAT, we've on
 enabled the NAT flag on two of them.
 
 
-### Scenario: Ex1. Basic Nat
+### Scenario: Ex1. Basic Nat  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 The default config to test a device behind a NAT. In this case we'll send traffic
 downstream: from the WAN to inside the LAN. 
 
 In practice, many devices will uses the same UDP port number for the private
 (inside the NAT) and the public (WAN-side).
 
-### Scenario: Ex2. Force remap
+### Scenario: Ex2. Force remap  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 A slightly more complex scenario. We send traffic to two different ByteBlower
 Ports inside the LAN. To the outside world (the WAN) both ByteBower ports have
 the same public IP address.
 
 Unlike the first scenario, the NAT can't do an identity mapping for both.
 
-### Scenario: Ex3. NAT timeout check
+### Scenario: Ex3. NAT timeout check  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 A simple scenario to check the timeout of the NAT entry. The setup is the same
 as the first scenario, but the duration is much longer.
 
-### Scenario: Ex4. Blocked traffic
+### Scenario: Ex4. Blocked traffic  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 Unlike the previous scenarios, this is a negative test: we don't expect any
 traffic to through here.
 
@@ -104,16 +104,16 @@ such devices are the most sensitive to the generated traffic.
 A default, UDP frameblasting flow checks whether we are successful in disrupting the
 device under test.
 
-### Scenario: Ex 1. Syn blasting
+### Scenario: Ex 1. Syn blasting  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 This scenario floods the network with TCP-syn packets. The NAT-device should ignore them fairly quickly.
 
-### Scenario: Ex 2. Wrong checksums
+### Scenario: Ex 2. Wrong checksums  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 Small packets with purposely wrong IPv4 header checksum and IPv4 length.
 
-### Scenario: Ex 3. Wrong Ether types
+### Scenario: Ex 3. Wrong Ether types  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 Sends out traffic with an uncommon Ether type (0x500)
 
-### Scenario: Ex 4. Broadcast traffic
+### Scenario: Ex 4. Broadcast traffic  [(example report)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/excentis/ByteBlower_GUI_examples/origin/documentation_cleanup/frameblasting/reports/frameblasting_basic/frameblasting_basic%20-%20Ex%201.%20frameblasting%20-%2020211011_214817__1.html)
 An example how to broadcast UDP traffic. This the most benign of all the
 scenarios. The rate is also fairly low (<1 MBit/s).
 
