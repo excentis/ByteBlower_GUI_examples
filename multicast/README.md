@@ -4,7 +4,7 @@ This folder contains the Multicast examples of the ByteBlower GUI.
 Doing multicasts test with the ByteBlower GUI is done easily configuring
 it as a destination of a FrameBlasting flow.
 
-## Note:
+## Note
   The TCP protocol doesn't work over multicast. This is a fundemental
   problem. To make this clear, you won't be able to select Multicast
   destination as soon as you've selectec a TCP template in the flow
